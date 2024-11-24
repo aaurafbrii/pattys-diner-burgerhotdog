@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subway Indonesia - Nikmati sandwich segar dengan berbagai pilihan rasa dan promo menarik.">
+    <meta name="keywords" content="Subway, Sandwich, Makanan Segar, Promo, Restoran, Catering">
+    <meta name="author" content="Subway Indonesia">
+    <title>Patty's Diner</title>
+    <link rel="stylesheet" href="style.css"> <!-- Hubungkan ke file CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header">
+            <h1>Patty's Diner</h1>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+            <nav>
+                <ul> 
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#locations">Lokasi</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                </ul>
+            </ul>
+            </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Rasakan Nikmatnya Burger dan Hot Dog</h2>
+                <p>Buger & Hot Dog yang nikmat untuk Anda!</p>
+                <a href="#menu" class="btn-primary">Lihat Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section id="promo">
+        <div class="container">
+            <h2>Promo Terbaru</h2>
+            <div class="promo-cards">
+                <div class="card">
+                    <img src="Paket 3 Burger.jpg" alt="Promo 1">
+                    <h3>Promo Spesial 1</h3>
+                    <h3>Rp. 99.900 </h3>
+                    <p><i>Paket Burger Bertiga</i></p>
+                </div>
+                <div class="card">
+                    <img src="Paket 2 Hotdog.jpg" alt="Promo 2">
+                    <h3>Promo Spesial 2</h3>
+                    <h3>Rp. 59.000 </h3>
+                    <p><i>Paket Hotdog Berdua</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Burger -->
+    <section id="menu">
+        <div class="container">
+            <h2>Menu Burger</h2>
+            <div class="menu-items">
+                <!-- Item 1 -->
+                <div class="item">
+                    <img src="burger 1.jpg" alt="Smoky Melt Deluxe">
+                    <h3>Smoky Melt Deluxe</h3>
+                    <h4>Rp. 59.000</h4>
+                    <p><i>Daging sapi yang juicy.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 2 -->
+                <div class="item">
+                    <img src="burger 2.jpg" alt="The Juicy Lucy">
+                    <h3>The Juicy Lucy</h3>
+                    <h4>Rp. 47.000</h4>
+                    <p><i>Daging burger yang meleleh.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-turkey">Jumlah:</label>
+                        <input type="number" id="quantity-turkey" name="quantity-turkey" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Turkey Breast', document.getElementById('quantity-turkey').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 3 -->
+                <div class="item">
+                    <img src="burger 3.jpg" alt="The Cheesy Delight">
+                    <h3>The Cheesy Delight</h3>
+                    <h4>Rp. 41.000</h4>
+                    <p><i>Kelezatan keju yang meleleh.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-veggie">Jumlah:</label>
+                        <input type="number" id="quantity-veggie" name="quantity-veggie" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Veggie Delite', document.getElementById('quantity-veggie').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 4 -->
+                <div class="item">
+                    <img src="burger 4.jpg" alt="The Hearty Burger">
+                    <h3>The Hearty Burger</h3>
+                    <h4>Rp. 52.000</h4>
+                    <p><i>Burger banyak lapisan rasa.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 5 -->
+                <div class="item">
+                    <img src="burger 5.jpg" alt="The All-American">
+                    <h3>The All-American</h3>
+                    <h4>Rp. 55.000</h4>
+                    <p><i>Rasa Amerika yang klasik dan lezat.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 6 -->
+                <div class="item">
+                    <img src="burger 6.jpg" alt="The Smoky Melt">
+                    <h3>The Smoky Melt</h3>
+                    <h4>Rp. 37.000</h4>
+                    <p><i>Sapi asap dan keju yang meleleh.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Menu Sandwich -->
+     <section id="menu">
+        <div class="container">
+            <h2>Menu Hot Dog</h2>
+            <div class="menu-items">
+                <!-- Item 1 -->
+                <div class="item">
+                    <img src="hotdog 1.jpg" alt="The Gourmet Hot Dog">
+                    <h3>The Gourmet Hot Dog</h3>
+                    <h4>Rp. 39.000</h4>
+                    <p><i>Kombinasi rasa yang lebih kompleks.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 2 -->
+                <div class="item">
+                    <img src="hotdog 2.jpg" alt="Hot Dog Fusion">
+                    <h3>Hot Dog Fusion</h3>
+                    <h4>Rp. 37.000</h4>
+                    <p><i>Korean klasik Hot Dog.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-turkey">Jumlah:</label>
+                        <input type="number" id="quantity-turkey" name="quantity-turkey" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Turkey Breast', document.getElementById('quantity-turkey').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 3 -->
+                <div class="item">
+                    <img src="hotdog 3.jpg" alt="Garden Fresh Hot Dog">
+                    <h3><i>Garden Fresh Hot Dog</i></h3>
+                    <h4>Rp. 35.000</h4>
+                    <p>Hot Dog dengan rasa kesegaran sayuran.</p>
+                    <form class="order-form">
+                        <label for="quantity-veggie">Jumlah:</label>
+                        <input type="number" id="quantity-veggie" name="quantity-veggie" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Veggie Delite', document.getElementById('quantity-veggie').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 4 -->
+                <div class="item">
+                    <img src="hotdog 4.jpg" alt="El Diablo  Hot Dog">
+                    <h3>El Diablo Hot Dog</h3>
+                    <h4>Rp. 38.000</h4>
+                    <p><i>Hot Dog pedas jalapeno.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 5 -->
+                <div class="item">
+                    <img src="hotdog 5.jpg" alt="The Smoky Onion Hot Dog">
+                    <h3>The Smoky Onion Hot Dog</h3>
+                    <h4>Rp. 36.000</h4>
+                    <p><i>Hotdog rasa asap dan bawang bombay.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+                <!-- Item 6 -->
+                <div class="item">
+                    <img src="hotdog 6.jpg" alt="Coney Island Hot Dog">
+                    <h3>Coney Island Hot Dog</h3>
+                    <h4>Rp. 40.000</h4>
+                    <p><i>Hot dog chili dan keju.</i></p>
+                    <form class="order-form">
+                        <label for="quantity-bmt">Jumlah:</label>
+                        <input type="number" id="quantity-bmt" name="quantity-bmt" min="1" value="1">
+                        <button type="button" class="btn-primary" onclick="addToCart('Italian B.M.T.', document.getElementById('quantity-bmt').value)">Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Summary Section -->
+    <section id="order-summary">
+        <div class="container">
+            <h2>Keranjang Pesanan</h2>
+            <div id="cart">
+                <p>Belum ada item dalam keranjang ini...</p>
+            </div>
+            <button type="button" class="btn-primary" onclick="placeOrder()">Selesaikan Pesanan</button>
+        </div>
+    </section>
+
+<!-- Locations Section -->
+<section id="locations">
+    <div class="container">
+        <h2>Lokasi Restoran</h2>
+        <p>Temukan Patty's Diner terdekat di kota Anda.</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31545.645312791605!2d106.7897573!3d-6.1353859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69912345678!2sPatty%27s%20Diner!5e0!3m2!1sid!2sid!4v1692345678901!5m2!1sid!2sid" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+    
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Bosan dengan burger dan hotdog yang itu-itu saja? Di Patty's Diner, kami menawarkan berbagai pilihan menu yang unik dan kreatif. Mulai dari burger dengan topping yang tidak biasa hingga hotdog dengan saus spesial, kami yakin Anda akan menemukan sesuatu yang baru untuk dicoba.</p>
+            </div>
+        </section>    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Patty's Dinner. Semua hak dilindungi.</p>
+                <ul>
+                    <li><a href="#">Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#contact">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Order System
+        let cart = [];
+
+        function addToCart(item, quantity) {
+            cart.push({ item, quantity });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartElement = document.getElementById('cart');
+            if (cart.length === 0) {
+                cartElement.innerHTML = '<p>Belum ada item dalam keranjang.</p>';
+            } else {
+                cartElement.innerHTML = cart.map((c, index) => `
+                    <p>${c.quantity} x ${c.item}</p>
+                `).join('');
+            }
+        }
+
+        function placeOrder() {
+            if (cart.length === 0) {
+                alert('Keranjang Anda kosong. Tambahkan item sebelum melanjutkan.');
+                return;
+            }
+            alert('Pesanan Anda telah diterima! Terima kasih!');
+            cart = [];
+            updateCart();
+        }
+    </script>
+
+</body>
+</html>

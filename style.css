@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #0b0b0b;
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+    color: #006400;
+}
+
+a:hover {
+    color: #006400;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006400;
+    padding: 10px 20px;
+    border-bottom: 2px solid #006400;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+    color: #fafafa;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 250px; /* Spacing between links */
+}
+
+.navbar {
+    background-color: #FFCC00; /* Warna merah sesuai dengan gambar */
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    gap:5x; /* Spacing for icon and text */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Memberikan jarak di antara item */
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline; /* Memberikan efek underline saat dihover */
+}
+
+/* Hero Section */
+#hero {
+    background: url('cover\ toko.png') no-repeat center center/cover; /* Ganti dengan gambar hero */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero .hero-content h2 {
+    font-size: 3em;
+    color: #fafafa;
+    margin-bottom: 10px;
+}
+
+#hero .hero-content p {
+    font-size: 1.5em;
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+#hero .btn-primary {
+    display: inline-block;
+    background-color: #00704a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+#hero .btn-primary:hover {
+    background-color: #005536;
+}
+
+/* Promo Section */
+#promo {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#promo h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.promo-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 300px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    margin: 10px 0;
+}
+
+.item p {
+    color: #555;
+}
+
+/* Form Order */
+.order-form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.order-form input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-form button {
+    background-color: #00704a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover {
+    background-color: #005536;
+}
+
+/* Ringkasan Pesanan */
+#order-summary {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#order-summary h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#cart {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+#cart p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#cart p span {
+    font-weight: bold;
+}
+
+#cart p:last-child {
+    margin-bottom: 0;
+}
+
+#order-summary button {
+    background-color: #00704a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#order-summary button:hover {
+    background-color: #005536;
+}
+
+/* Locations Section */
+#locations {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#locations iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+    margin-top: 20px;
+}
+
+/*Tentang Kami*/
+#about {
+    background-color: #FFCC00;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 922px) {
+    content, aside {
+        width: 100%;
+    }
+}
